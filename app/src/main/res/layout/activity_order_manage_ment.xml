@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".OrderManageMentActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_01">
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_18"
+            android:layout_marginTop="@dimen/margin_5"
+            android:src="@drawable/fanhuijian" />
+
+        <RelativeLayout
+            android:id="@+id/rl_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_5">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/white_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="订单管理" />
+
+            <ImageView
+                android:id="@+id/iv_pull_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_toRightOf="@id/tv_title"
+                android:src="@drawable/pull_down" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tg.dippermerchant.view.PullRefreshListView
+            android:id="@+id/pull_listview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.tg.dippermerchant.view.PullRefreshListView
+            android:id="@+id/pull_listview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

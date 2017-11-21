@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+    >
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_nmerchandise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_btn_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="商品"
+            android:textColor="@drawable/text_radio_color"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="服务"
+            android:textColor="@drawable/text_radio_color"
+            android:textSize="16sp" />
+        <RadioButton
+            android:id="@+id/rb_virtual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="虚拟"
+            android:textColor="@drawable/text_radio_color"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <com.tg.dippermerchant.view.ShowViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+<View
+    android:id="@+id/view_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"/>
+</LinearLayout>

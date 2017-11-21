@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="text_color1">#999999</color>
+    <color name="text_color2">#666666</color>
+    <color name="text_color3">#333333</color>
+    <color name="home_fill">#3a88f9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_shallow">#ccffffff</color>
+    <color name="base_color">#f5f5f5</color>
+    <color name="blue">#34c3ff</color>
+    <color name="home_bg_color">#4fbcfa</color>
+    <color name="line_color">#e5e5e5</color>
+    <color name="selected_bg">#EBEBEB</color>
+    <color name="default_bg">#BFBFBF</color>
+    <color name="text_head">#151515</color>
+    <color name="light_color">#fafafa</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="order_choose">#2eb2ff</color>
+    <color name="text_1">#b3b3b3</color>
+    <color name="text_3">#919699</color>
+    <color name="text_4">#142833</color>
+    <color name="text_8">#b3ffffff</color>
+    <color name="text_9">#475b66</color>
+    <color name="text_10">#1f2b33</color>
+    <color name="text_11">#5c6266</color>
+    <color name="text_12">#bfb3b3b3</color>
+    <color name="text_13">#0aa5fe</color>
+    <color name="shelves_up">#f0743d</color>
+    <color name="shelves_down">#38b0f5</color>
+    <color name="unshelves_state">#53c0ff</color>
+    <color name="withdrawal_money">#36b0f6</color>
+    <color name="order_details_sure">#38b0f5</color>
+    <color name="red_exit">#e10000</color>
+    <color name="tixian_bg">#bdd4f6</color>
+    <color name="tixian_line">#dbdbdb</color>
+    <color name="forget_pwd">#aaaaaa</color>
+    <color name="order_state">#fb8c4a</color>
+    <color name="proceedes_bg">#63a2ff</color>
+    <color name="tixian_note">#2a4c80</color>
+    <color name="tixian_state">#fbaa4a</color>
+</resources>

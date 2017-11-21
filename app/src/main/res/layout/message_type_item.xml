@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <ImageView
+            android:id="@+id/message_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/add_time"
+            style="@style/hint_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="time"
+            android:layout_alignTop="@id/message_icon" />
+
+        <TextView
+            android:id="@+id/tv_notread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@drawable/red_oval_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8sp" 
+            android:layout_alignBottom="@id/message_icon"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/add_time"
+            android:layout_toRightOf="@id/message_icon"
+             android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/message_type"
+                style="@style/black_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="title" />
+
+            <TextView
+                android:id="@+id/message_title"
+                style="@style/light_gray_13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/message_type"
+                android:singleLine="true"
+                android:text="content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

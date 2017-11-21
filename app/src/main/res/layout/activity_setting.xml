@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity" >
+
+    <com.tg.dippermerchant.view.MessageArrowView
+        android:id="@+id/mine_info_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <!-- <RelativeLayout
+        android:id="@+id/rl_upApk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrow_item_selector"
+        android:padding="18dp" >
+
+        <TextView
+            style="@style/black_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检测新版本" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/yindao" />
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+           android:textSize="15sp"
+            android:textColor="@color/red_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出登录" />
+    </LinearLayout>
+
+</LinearLayout>

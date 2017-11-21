@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConsumerCodeManageMentActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20" >
+
+            <TextView
+                android:id="@+id/textview1"
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="开始日期" />
+
+            <RelativeLayout
+                android:id="@+id/rl_startTime"
+                android:layout_width="@dimen/margin_120"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textview1"
+                android:background="@drawable/shape_white_bg" >
+
+                <TextView
+                    android:id="@+id/tv_startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="请选择"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20" >
+
+            <TextView
+                android:id="@+id/textview2"
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="结束时间" />
+
+            <RelativeLayout
+                android:id="@+id/rl_endTime"
+                android:layout_width="@dimen/margin_120"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textview2"
+                android:background="@drawable/shape_white_bg" >
+
+                <TextView
+                    android:id="@+id/tv_endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="请选择"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_click_query"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_20"
+            android:background="@color/unshelves_state" >
+
+            <TextView
+                style="@style/white_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="点击查询" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.tg.dippermerchant.view.PullRefreshListView
+        app:background_color="@color/base_color"
+        android:id="@+id/pull_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

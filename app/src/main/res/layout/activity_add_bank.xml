@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddBankActivity" >
+
+    <com.tg.dippermerchant.view.MessageArrowView
+        android:id="@+id/messageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_warm_prompt"
+        style="@style/hint_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_18" />
+
+    <LinearLayout
+        android:id="@+id/ll_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/tijiaobaoxiu"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            style="@style/white_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请绑定" />
+    </LinearLayout>
+
+</LinearLayout>

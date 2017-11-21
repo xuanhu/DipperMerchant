@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_login_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_01">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/white_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_5"
+                android:singleLine="true"
+                android:text="商家登录" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                style="@style/white_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="30dp"
+                android:singleLine="true"
+                android:text="注册" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_login_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/account" />
+
+            <EditText
+                android:id="@+id/edit_user"
+                style="@style/black_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="@string/text_password"
+                android:hint="请输入商家用户名"
+                android:inputType="none"
+                android:maxLength="11"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/text_color1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_login_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/cipher" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                style="@style/black_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="@string/text_password"
+                android:hint="请输入商家登录密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/text_color1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/home_fill"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                style="@style/white_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/margin_18">
+
+            <TextView
+                android:id="@+id/forget_pwd"
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="忘记密码？" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- <RelativeLayout
+         android:id="@+id/forget_pwd"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:background="@color/white"
+         android:paddingBottom="15dp"
+         android:paddingTop="15dp" >
+         <TextView
+             style="@style/black_15"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:text="忘记密码？" />
+     </RelativeLayout>-->
+
+</RelativeLayout>

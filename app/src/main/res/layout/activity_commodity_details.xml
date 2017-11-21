@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommodityDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_login_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    style="@style/black_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="商品名称" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/black_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入商品名称"
+                    android:inputType="none"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/forget_pwd" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_02" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_login_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    style="@style/black_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="供货价格" />
+
+                <EditText
+                    android:id="@+id/et_originalprice"
+                    style="@style/black_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入供货价格"
+                    android:inputType="none"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/forget_pwd" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_02" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_login_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    style="@style/black_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="市场价格" />
+
+                <EditText
+                    android:id="@+id/et_sellingprice"
+                    style="@style/black_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入商品建议零售价"
+                    android:inputType="none"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/forget_pwd" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_02" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_login_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    style="@style/black_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="商品库存" />
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    style="@style/black_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入商品库存"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/forget_pwd" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_02" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_login_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    style="@style/black_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="商品介绍" />
+
+                <EditText
+                    android:id="@+id/et_describe"
+                    style="@style/black_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入商品的简单介绍"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/forget_pwd" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_02" />
+
+            <com.tg.dippermerchant.view.MessageArrowView
+                android:id="@+id/messageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_affirm_putaway"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:layout_alignParentBottom="true"
+        android:background="@color/home_fill">
+
+        <TextView
+            android:id="@+id/tv_submit"
+            style="@style/white_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="确认上架" />
+    </RelativeLayout>
+
+</RelativeLayout>

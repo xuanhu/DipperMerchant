@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_home_03">
+
+    <RelativeLayout
+        android:id="@+id/rl_collection"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_collection"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/collection" />
+
+        <TextView
+            style="@style/black_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_collection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="收款" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_check_code"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_check_code"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_commoditys" />
+
+        <TextView
+            style="@style/black_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_check_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="添加商品" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_order"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_order"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/order" />
+
+        <TextView
+            style="@style/black_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_order"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="订单" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_customer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_customer"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/customer" />
+
+        <TextView
+            style="@style/black_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_customer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="客服" />
+    </RelativeLayout>
+</LinearLayout>

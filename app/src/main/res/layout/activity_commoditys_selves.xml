@@ -1,0 +1,202 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCommoditysActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_login_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="商品名称" />
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/black_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入商品名称"
+                android:inputType="none"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/forget_pwd" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_login_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="供货价格" />
+
+            <EditText
+                android:id="@+id/et_originalprice"
+                style="@style/black_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入供货价格"
+                android:inputType="none"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/forget_pwd" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_login_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="市场价格" />
+
+            <EditText
+                android:id="@+id/et_sellingprice"
+                style="@style/black_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入商品建议零售价"
+                android:inputType="none"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/forget_pwd" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_login_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="商品库存" />
+
+            <EditText
+                android:id="@+id/et_amount"
+                style="@style/black_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入商品库存"
+                android:inputType="number"
+                android:maxLength="9"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/forget_pwd" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_login_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="商品介绍" />
+
+            <EditText
+                android:id="@+id/et_describe"
+                style="@style/black_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入商品的简单介绍"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/forget_pwd" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="商品图片"
+                style="@style/black_15"/>
+
+            <com.tg.dippermerchant.view.ImageViewGroup
+                android:id="@+id/imgGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_white_bg" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

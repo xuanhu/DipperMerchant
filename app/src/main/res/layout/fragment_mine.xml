@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_01"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/tv_head_mine"
+            style="@style/white_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人中心" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_mine"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <com.tg.dippermerchant.view.RoundImageView
+            android:id="@+id/img_head"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:layout_centerVertical="true"
+            android:src="@drawable/moren_geren" />
+
+        <RelativeLayout
+            android:id="@+id/rl_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="商家信息"
+                android:textColor="#80ffffff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_textview"
+                android:src="@drawable/mine_head_next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/rl_view"
+            android:layout_toRightOf="@id/img_head"
+            android:layout_marginRight="@dimen/margin_10">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/white_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="得了文具" />
+
+            <TextView
+                android:id="@+id/tv_cname"
+                style="@style/white_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginLeft="10dp"
+                android:text="daege" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.tg.dippermerchant.view.MessageArrowView
+                android:id="@+id/mine_info_zone1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <com.tg.dippermerchant.view.MessageArrowView
+                android:id="@+id/mine_info_zone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

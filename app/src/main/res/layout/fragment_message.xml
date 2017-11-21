@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_01"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/tv_head_message"
+            style="@style/white_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="留言" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/base_color"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_entity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radio_btn_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="待回复"
+                android:textColor="@drawable/text_radio_color"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_dummy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radio_btn_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="已回复"
+                android:textColor="@drawable/text_radio_color"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+
+        <com.tg.dippermerchant.view.MyViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

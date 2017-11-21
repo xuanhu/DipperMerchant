@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CodeValidationSuessfulActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:paddingBottom="@dimen/margin_30"
+        android:paddingTop="@dimen/margin_30" >
+
+        <ImageView
+            android:id="@+id/iv_saoma_validation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/chenggon_validation" />
+
+        <TextView
+            style="@style/white_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_saoma_validation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="验证成功！" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" >
+
+        <TextView
+            android:id="@+id/tv_useCode"
+            style="@style/black_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="劵码密码：346546" />
+
+        <include layout="@layout/line_horizontal_02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp" >
+
+            <TextView
+                style="@style/hint_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称：" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天天蛋糕100元代金券" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/hint_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买价格：" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="72.00元" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/hint_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买用户：" />
+
+            <TextView
+                android:id="@+id/tv_user"
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13398530134" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                style="@style/hint_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证时间：" />
+
+            <TextView
+                android:id="@+id/tv_validation_time"
+                style="@style/black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-02-21  12:23" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_use"
+        style="@style/white_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:layout_marginRight="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/shape_bule_validation"
+        android:paddingBottom="@dimen/margin_12"
+        android:paddingTop="@dimen/margin_12"
+        android:text="立即使用" />
+
+</LinearLayout>

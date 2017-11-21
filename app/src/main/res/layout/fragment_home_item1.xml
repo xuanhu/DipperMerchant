@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_income"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0.00"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_income"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="今日收入"
+            android:textColor="#b3ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/margin_25"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/rl_new_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_new_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_new_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="今日新单"
+            android:textColor="#b3ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/margin_25"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wait_delivery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_wait_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_wait_delivery"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="待发货"
+            android:textColor="#b3ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

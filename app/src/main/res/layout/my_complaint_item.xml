@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_black_complaint_bg"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/black_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投诉时间：" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/red_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="超期，，，" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_section"
+            style="@style/hint_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="投诉部门:" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/hint_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投诉类型:" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/hint_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="投诉内容：" />
+    </LinearLayout>
+
+</LinearLayout>

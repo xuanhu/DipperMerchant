@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MerchantAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopping_balance"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/margin_30"
+                android:paddingTop="@dimen/margin_30">
+
+                <TextView
+                    android:id="@+id/text"
+                    style="@style/black_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:text="账户余额" />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text"
+                    android:layout_centerHorizontal="true"
+                    android:text="0.00"
+                    android:textColor="@color/home_fill"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tixian_bg"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingTop="@dimen/margin_5">
+
+
+                <TextView
+                    android:id="@+id/tv_withdraw"
+                    style="@style/white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计提现:0.00" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin_18">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:src="@drawable/bank_card" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@id/image"
+                android:text="我的银行卡" />
+
+            <RelativeLayout
+                android:id="@+id/rl_add_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_18"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:src="@drawable/add" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_color">
+
+            <RelativeLayout
+                android:id="@+id/rl_nobinding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_30">
+
+                    <TextView
+                        style="@style/light_gray_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="你还没有绑定银行卡！" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv_bank"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:listSelector="#00000000"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

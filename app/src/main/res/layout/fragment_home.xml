@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_head_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_01">
+
+        <RelativeLayout
+            android:id="@+id/rl_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/shape_light_bule_bg">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:src="@drawable/localize" />
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                style="@style/white_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_toRightOf="@id/imageview"
+                android:text="商店名称" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_color"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_180"
+                    android:background="@drawable/bg_home_02" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:id="@id/rl_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/margin_30">
+
+                        <include layout="@layout/fragment_home_item1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_head"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:layout_marginRight="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/margin_25">
+
+                        <include layout="@layout/fragment_home_item2" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingRight="@dimen/margin_18"
+                android:paddingTop="@dimen/margin_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:background="@drawable/home_icon_hotspot_normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/home_icon_line_normal" />
+
+                <com.tg.dippermerchant.view.ScrollBanner
+                    android:id="@+id/tv_notification"
+                    style="@style/hint_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_12"
+                    android:singleLine="true"
+                    android:text="通知" />
+            </LinearLayout>
+
+            <com.tg.dippermerchant.view.AdvertisementPager
+                android:id="@+id/adverPager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/white">
+
+                <com.tg.dippermerchant.view.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="0.0dip"
+                    android:listSelector="@null"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0.0dip" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:src="@drawable/end" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

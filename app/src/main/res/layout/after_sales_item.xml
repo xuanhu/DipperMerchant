@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_commoditys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/line_horizontal_02" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        style="@style/light_gray_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:text="已支付" />
+
+    <RelativeLayout
+        android:id="@+id/rl_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.tg.dippermerchant.view.MyButton
+                    android:id="@+id/btn_refuse"
+                    style="@style/light_gray_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_delete_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20"
+                    android:paddingTop="5dp"
+                    android:text="拒绝" />
+
+                <com.tg.dippermerchant.view.MyButton
+                    android:id="@+id/btn_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/btn_refuse"
+                    android:background="@drawable/shape_agree_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20"
+                    android:paddingTop="5dp"
+                    android:text="同意"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <com.tg.dippermerchant.view.MyButton
+                android:id="@+id/btn_delete"
+                style="@style/light_gray_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/shape_delete_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:paddingTop="5dp"
+                android:text="删除订单"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

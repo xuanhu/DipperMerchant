@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingLeft="18dp"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/margin_75"
+        android:layout_height="@dimen/margin_75"
+        android:layout_centerVertical="true"
+        android:src="@drawable/moren" />
+
+    <TextView
+        android:id="@+id/tv_originalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_15"
+        android:text="￥50.00元"
+        android:textColor="@color/text_11"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_toLeftOf="@id/tv_originalPrice"
+        android:layout_toRightOf="@id/iv_head"
+        android:text="商品名称"
+        android:textColor="@color/text_10"
+        android:textSize="15sp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_head"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_toRightOf="@id/iv_head">
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/hint_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="库存：500" />
+
+        <RelativeLayout
+            android:id="@+id/rl_shelves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/shape_order_bg">
+
+            <TextView
+                android:id="@+id/tv_shelves_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:maxLength="7"
+                android:singleLine="true"
+                android:text="下架"
+                android:textColor="@color/home_fill"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

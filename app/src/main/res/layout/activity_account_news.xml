@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tg.dippermerchant.AccountNewsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="0.00"
+            android:textColor="@color/home_fill"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/black_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_money"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="金额" />
+    </RelativeLayout>
+
+    <com.tg.dippermerchant.view.MessageArrowView
+        android:id="@+id/messageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10" />
+</LinearLayout>
